@@ -1,0 +1,79 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#heading{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35vh 25vh 0vh 25vh;
+    padding: 10px;
+    font-size: larger;
+}
+
+#bts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 34px 0px 0px 0px ;
+}
+
+#easy{
+    padding: 5px 20px;
+    background-color: rgb(153, 255, 0);
+    border: 1px solid rgb(153, 255, 0) ;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#medium{
+    padding: 5px 20px;
+    background-color: rgb(153, 255, 0);
+    border: 1px solid rgb(153, 255, 0) ;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#hard{
+    padding: 5px 20px;
+    background-color: rgb(153, 255, 0);
+    border: 1px solid rgb(153, 255, 0) ;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#linkeasy{
+    text-decoration: none;
+    color: black;
+}
+
+#linkmedium{
+    text-decoration: none;
+    color: black;
+}
+
+#linkhard{
+    text-decoration: none;
+    color: black;
+}
+
+#linkeasy:hover{
+    color: rgb(69, 69, 69);
+}
+
+#linkmedium:hover{
+    color: rgb(69, 69, 69);
+}
+
+#linkhard:hover{
+    color: rgb(69, 69, 69);
+}
+
+#version{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
