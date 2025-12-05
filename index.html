@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPK Game</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="medium.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Rock, Paper, Scissors</h1>
+    <div id="head">
+        Normal Mode
+    </div>
 
-    <button id="play" ><a href="../Difficulty Page/difficulty.html" id="linkd">Play</a></button>
+    <div id="buttons">
+        <button id="rock" onclick="
+            let newcomputerChoice = normalChoiceGenerator1();
+            
+            let resultmsg = resultMaker('Rock', newcomputerChoice);
+
+            showResult('Rock', newcomputerChoice, resultmsg);
+            ">
+            Rock
+        </button>
+
+        <button id="paper" onclick="
+            newcomputerChoice = normalChoiceGenerator2();
+            
+            resultmsg = resultMaker('Paper', newcomputerChoice);
+        
+            showResult('Paper', newcomputerChoice, resultmsg);
+        ">
+            Paper
+        </button>
+
+        <button id="scissors" onclick="
+            newcomputerChoice = normalChoiceGenerator3();
+            
+            resultmsg = resultMaker('Scissors', newcomputerChoice);
+        
+            showResult('Scissors', newcomputerChoice, resultmsg);
+        ">
+            Scissors
+        </button>
+    </div>
+
+    <div id="bth">
+        <button id="lastbtn"><a id="linkd" href="../Home Page/home.html">Back to Home</a></button>
+    </div>
+
+    <div>
+        <h3 id="user-choice"></h3>
+        <h3 id="computer-choice"></h3>
+        <h3 id="result-give"></h3>
+        <h3 id="user-score"></h3>
+    </div>
 
     <div id="version">Version 1.0</div>
-
     
+    <script src="medium.js"></script>
 </body>
 </html>
